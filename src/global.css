@@ -1,0 +1,63 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+	--light-grey: #dce4e3;
+  --text-color: #084236;
+  
+}
+
+*{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root{
+  display: flex;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.flex{
+  display: flex;
+}
+
+.pages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - var(--side-bar-contracted-width));
+  min-height: 100vh;
+  font-size: 4rem;
+  margin-left: var(--side-bar-contracted-width);
+}
+@media (max-width: 768px){
+  .pages{
+    font-size: 2rem;
+  }
+}
+
+.dashboard{
+  background-color: #ece0ff;
+}
+.pets{
+  background-color: #ffe1f6;
+}
+.costumers{
+  background-color: #ffdce5;
+} 
+.vets{
+  background-color: #ffe7de;
+}
+.settings{
+  background-color: #fff4e2;
+}
